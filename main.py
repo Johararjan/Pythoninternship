@@ -3,7 +3,7 @@ import smtplib
 app=typer.Typer()
 
 @app.command()
-def enter(sender: str, receivers:str, password:str, subject:str, body:str):
+def enter(sender: str, receivers:str, password:str, subject:str, body:list[str]):
             #in the above input prompt enter your google account application specific password for more details please read the
             # readme.txt file
             server = smtplib.SMTP('smtp.gmail.com', 587)
