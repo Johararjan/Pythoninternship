@@ -16,7 +16,7 @@ def enter(sender: str, receivers:str, password:str, subject:str, body:list[str])
             print('login successfull')
             server.sendmail(sender, receivers, message)
             print("email sent successfully")
-
+            print("hello this is arjan singh johar");
 
 if __name__=="__main__":
     app()import typer
